@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Arrow Shield Security</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/aslogo.png" alt="Arrow Shield Security Logo" class="logo" />
+      <div class="company-info">
+        <h1>Arrow Shield Security Sdn Bhd</h1>
+        <p>Your Trusted Security Partner</p>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto 30px;">
+      Kami sedia membantu anda untuk sebarang pertanyaan, permintaan sebut harga, atau maklum balas. Hubungi kami melalui maklumat di bawah atau isi borang untuk respons segera dari pasukan kami.
+    </p>
+    <div class="contact-info" style="display:flex; flex-wrap:wrap; gap:40px; justify-content:center; margin-bottom:40px;">
+      <div style="min-width:250px;">
+        <p><strong>Email:</strong> <a href="mailto:info@arrowshield.com.my">info@arrowshield.com.my</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+60123456789">+60 12-345 6789</a></p>
+        <p><strong>Address:</strong><br>
+          No.123, Jalan Aman,<br>
+          50450 Kuala Lumpur,<br>
+          Malaysia
+        </p>
+        <p><strong>Waktu Operasi:</strong><br>
+          Isnin - Jumaat: 9.00am - 6.00pm<br>
+          Sabtu: 9.00am - 1.00pm
+        </p>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps?q=No.123,+Jalan+Aman,+50450+Kuala+Lumpur,+Malaysia&output=embed"
+          width="300"
+          height="200"
+          style="border:0; border-radius:8px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Arrow Shield Security Location"></iframe>
+      </div>
+    </div>
+    <form class="contact-form" style="max-width:500px; margin:0 auto; background:#f8f9fa; padding:30px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required style="width:100%;padding:8px;margin-bottom:15px;"><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required style="width:100%;padding:8px;margin-bottom:15px;"><br/>
+
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="5" required style="width:100%;padding:8px;margin-bottom:15px;"></textarea><br/>
+
+      <button type="submit" class="cta-btn" style="width:100%;">Send Message</button>
+    </form>
+    <div class="about-cta" style="text-align:center; margin-top:40px;">
+      <p>Atau hubungi kami terus untuk konsultasi keselamatan percuma!</p>
+      <a href="tel:+60123456789" class="cta-btn">Call Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arrow Shield Security Sdn Bhd. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
